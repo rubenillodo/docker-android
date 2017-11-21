@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "node index"
+    "build": "node index",
+    "format": "prettier --write '**/*.{js,json}'"
   },
   "pre-commit": [
     "build"
@@ -18,5 +19,7 @@
     "mz": "^2.7.0",
     "pre-commit": "^1.2.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^1.8.2"
+  }
 }
