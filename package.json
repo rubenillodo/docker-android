@@ -11,15 +11,10 @@
     "build": "node index",
     "format": "prettier --write '**/*.{js,json}'"
   },
-  "pre-commit": [
-    "build"
-  ],
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "cross-fetch": "^2.1.0",
-    "fs-extra": "^5.0.0",
-    "mz": "^2.7.0",
-    "pre-commit": "^1.2.2"
+    "fs-extra": "^5.0.0"
   },
   "devDependencies": {
     "prettier": "^1.11.1"
