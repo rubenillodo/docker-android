@@ -1,7 +1,7 @@
 {
   "name": "docker-android",
   "version": "0.0.0",
-  "description": "OpenJDK environment with the Android SDK",
+  "description": "Generates Dockerfiles with different versions of Android build tools and platform tools",
   "main": "index.js",
   "repository": "git@github.com:rulych/docker-android.git",
   "author": "Rubén Illodo Brea <me@rubenillodo.com>",
