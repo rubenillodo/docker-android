@@ -7,7 +7,10 @@ module.exports.start = async function start() {
   await fs.remove("./build");
   const template = await fs.readFile("./template.Dockerfile", { encoding: "utf-8" });
   const apiLevels = (await getApiLevels()).filter((level) => level >= 15);
+  console.log("API levels:", apiLevels);
+
   const buildToolsVersions = await getBuildToolsVersions();
+  console.log("Build tools versions:", buildToolsVersions);
 
   await Promise.all(
     apiLevels.map(async (apiLevel) => {
